@@ -1,0 +1,12 @@
+{
+  "name": "出勤自動報告",
+  "description": "出勤自動報告",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["attend.js"],
+      "matches": ["https://attendance.moneyforward.com/my_page"]
+    }
+  ]
+}
