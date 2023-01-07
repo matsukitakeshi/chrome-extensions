@@ -10,8 +10,8 @@ window.addEventListener('load', function () {
 
     attend_button.addEventListener('click', function () {
         const date = new Date();
-        const start_at = date.getHours() + ":" + date.getMinutes();
-        const finish_at = (date.getHours() + 8) + ":" + date.getMinutes();
+        const start_at = date.getHours().toString().padStart(2, '0') + ":" + date.getMinutes().toString().padStart(2, '0');
+        const finish_at = (date.getHours() + 8) + ":" + date.getMinutes().toString().padStart(2, '0');
         const message = "出勤しました\n" + start_at + '-' + finish_at;
 
         const channel = 'チャンネル名を入力';
